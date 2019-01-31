@@ -1,0 +1,3 @@
+Bom Dia
+ Boa Tarde
+Boa Noite
