@@ -1,11 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package trywithresources;
 
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 /**
  *
@@ -13,13 +9,18 @@ import java.io.File;
  */
 public class TryWithResources {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-         File f = new File("/home/adriano/gitAdriano/TryWithResources");
-         Scanner sc = null;
-         
+    public static void main(String[] args) throws Exception {
+        String caminho = "/home/adriano/gitAdriano/TryWithResources/arquivo.txt";
+        //caso ocorra algum problema o try faz o .close() dos objetos declarados e do tipo throwable
+        try (BufferedReader br = new BufferedReader(new FileReader(caminho))) {
+            String line = br.readLine();
+
+            while (line != null) {
+                System.out.println(line);
+                line = br.readLine();
+            }
+        } catch (Exception e) {
+            throw new Exception(e);
+        }
     }
-    
 }
