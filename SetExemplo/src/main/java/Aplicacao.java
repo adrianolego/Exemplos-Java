@@ -5,9 +5,9 @@ public class Aplicacao {
     public static void main(String[] args) {
         // mais rapido de todos e não mantém a ordem dos elementos
         Set<String> set1 = new HashSet<>();
-        // velocidade intermediário e mantém a ordem de inserção
+        // mais lento e e mantém a ordem de inserção
         Set<String> set2 = new TreeSet<>();
-        // mais lento e mantém a ordem de inserção
+        // velocidade intermediário  mantém a ordem de inserção
         Set<String> set3 = new LinkedHashSet<>();
 
         System.out.println("\nExemplo de uso do SET");
@@ -32,10 +32,13 @@ public class Aplicacao {
 
         exemploContinuacao();
 
-        /*As comparações são feitas pela implementação do toString e hashCode sendo que se não forem implementados em
+        /*SET as comparações são feitas pela implementação do toString e hashCode sendo que se não forem implementados em
         uma classe a qual se esta usando a comparação o compilador vai usar o ponteiro como comparação, porém nessa
         comparação será utilizado o endereço de memória portanto se os objetos não forem estanciados no mesmo endereço
         a comparação vai retornar false (contains)*/
+
+        /*TREESET as comparações são feitas usando a interface da classe Comparable portanto as classe que serão
+        comparadas devem implementar essa classe Comparable<Classe> e implementar o método compareTo*/
     }
 
     private static void exemplo(Set<String> set) {
