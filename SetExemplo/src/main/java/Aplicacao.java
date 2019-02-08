@@ -31,6 +31,11 @@ public class Aplicacao {
         set1.removeIf(x -> x.charAt(0) == 'T');
 
         exemploContinuacao();
+
+        /*As comparações são feitas pela implementação do toString e hashCode sendo que se não forem implementados em
+        uma classe a qual se esta usando a comparação o compilador vai usar o ponteiro como comparação, porém nessa
+        comparação será utilizado o endereço de memória portanto se os objetos não forem estanciados no mesmo endereço
+        a comparação vai retornar false*/
     }
 
     private static void exemplo(Set<String> set) {
