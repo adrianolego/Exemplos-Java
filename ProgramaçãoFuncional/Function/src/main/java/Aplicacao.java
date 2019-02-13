@@ -22,14 +22,14 @@ public class Aplicacao {
          * */
 
         //1 - classe implementada manualmente
-        Function<Produto, String> c1 = new Function<Produto, String>() {
+        Function<Produto, String> f = new Function<Produto, String>() {
             @Override
             public String apply(Produto p) {
                 return p.getProduto().toUpperCase();
             }
         };
 
-        List<String> resultado = lista.stream().map(c1).collect(Collectors.toList());
+        List<String> resultado = lista.stream().map(f).collect(Collectors.toList());
 
         // 2 - passando método estático
         resultado = lista.stream().map(Produto::upper).collect(Collectors.toList());
