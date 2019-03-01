@@ -1,0 +1,9 @@
+
+csquid:S00112("FDefine and throw a dedicated exception instead of using a generic one.(Ïã¡İşÿÿÿÿ
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(É”üÄùÿÿÿÿ8‰–šå-
+Osquid:S1612.",Replace this lambda with a method reference.(ƒË¦„ûÿÿÿÿ8½¹ˆå-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ª¿†Š8µ¨ùå-
+^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ö§Ëı
+Isquid:S1612;",Replace this lambda with a method reference.(¿”Ù^8£Øäå-
