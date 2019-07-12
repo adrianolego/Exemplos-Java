@@ -1,5 +1,7 @@
+com/adriano/modelagem/domain/Produto.class
+com/adriano/modelagem/repository/ProdutoRepository.class
+com/adriano/modelagem/resource/CategoriaResource.class
+com/adriano/modelagem/repository/CategoriaRepository.class
 com/adriano/modelagem/domain/Categoria.class
 com/adriano/modelagem/service/CategoriaService.class
-com/adriano/modelagem/resource/CategoriaResource.class
 com/adriano/modelagem/ModelagemConceitualUmlApplication.class
-com/adriano/modelagem/repository/CategoriaRepository.class
