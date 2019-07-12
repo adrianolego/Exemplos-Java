@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc510728-ce64-4d92-91dc-c55dd04a3993" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ArquiteturaLogic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Teste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjetoArquitetural" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjetoArquitetural" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjetoArquitetural" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="42" />
+              <caret line="5" column="39" selection-start-line="2" selection-end-line="2" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -40,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Teste.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Teste3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="225">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -135,6 +133,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/gitSan5/MSSanAuditoria" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -177,15 +176,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1926" height="1052" extended-state="7" />
-    <editor active="true" />
+    <frame x="-3" y="0" width="1926" height="1052" extended-state="6" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="SonarLint" />
@@ -274,7 +272,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="42" />
+          <caret line="5" column="39" selection-start-line="2" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -288,7 +286,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Teste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -297,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Teste3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="225">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
