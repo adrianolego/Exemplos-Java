@@ -1,6 +1,5 @@
 package com.adriano.modelagem.domain;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,25 +8,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
-@Entity()
-public class Categoria implements Serializable {
+@Entity
+public class Estado implements Serializable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
   private String nome;
 
-  @JsonManagedReference
-  @ManyToMany(mappedBy = "categorias")
-  private List<Produto> produtos = new ArrayList<>();
+  @OneToMany(mappedBy = "estado")
+  private List<Cidade> cidades = new ArrayList<>();
 
-  public Categoria() {
+  public Estado() {
   }
 
-
-  public Categoria(Integer id, String nome) {
+  public Estado(Integer id, String nome) {
     this.id = id;
     this.nome = nome;
   }
@@ -36,27 +33,24 @@ public class Categoria implements Serializable {
     return id;
   }
 
-
-  public Categoria setId(Integer id) {
+  public void setId(Integer id) {
     this.id = id;
-    return this;
   }
 
   public String getNome() {
     return nome;
   }
 
-  public Categoria setNome(String nome) {
+  public void setNome(String nome) {
     this.nome = nome;
-    return this;
   }
 
-  public List<Produto> getProdutos() {
-    return produtos;
+  public List<Cidade> getCidades() {
+    return cidades;
   }
 
-  public Categoria setProdutos(List<Produto> produtos) {
-    this.produtos = produtos;
+  public Estado setCidades(List<Cidade> cidades) {
+    this.cidades = cidades;
     return this;
   }
 
@@ -68,8 +62,8 @@ public class Categoria implements Serializable {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Categoria categoria = (Categoria) o;
-    return id.equals(categoria.id);
+    Estado cidade = (Estado) o;
+    return id.equals(cidade.id);
   }
 
   @Override
