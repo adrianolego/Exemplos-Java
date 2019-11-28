@@ -2,24 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93be2840-09fb-40b0-9cde-0e38cc83ca1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/CidadeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/EnderecoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/EstadoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/ModelagemConceitualUmlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/ModelagemConceitualUmlApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Modelagem-conceitual-UML-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Modelagem-conceitual-UML-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.adriano.modelagem.conceitual.UML.ModelagemConceitualUmlApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.adriano.modelagem.conceitual.UML.ModelagemConceitualUmlApplicationTests.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetoArquitetural" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoArquitetural" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -83,7 +65,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adriano/modelagem/ModelagemConceitualUmlApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="501">
               <caret line="85" column="99" selection-start-line="85" selection-start-column="99" selection-end-line="85" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -300,9 +282,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1926" height="1052" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23906083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23906083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -319,7 +300,7 @@
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27380952" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27380952" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -530,7 +511,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adriano/modelagem/ModelagemConceitualUmlApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="501">
           <caret line="85" column="99" selection-start-line="85" selection-start-column="99" selection-end-line="85" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
