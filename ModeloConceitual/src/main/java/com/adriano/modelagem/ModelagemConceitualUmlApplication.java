@@ -7,12 +7,7 @@ import com.adriano.modelagem.domain.Endereco;
 import com.adriano.modelagem.domain.Estado;
 import com.adriano.modelagem.domain.Produto;
 import com.adriano.modelagem.domain.enums.TipoCliente;
-import com.adriano.modelagem.repository.CategoriaRepository;
-import com.adriano.modelagem.repository.CidadeRepository;
-import com.adriano.modelagem.repository.ClienteRepository;
-import com.adriano.modelagem.repository.EnderecoRepository;
-import com.adriano.modelagem.repository.EstadoRepository;
-import com.adriano.modelagem.repository.ProdutoRepository;
+import com.adriano.modelagem.repository.*;
 
 import java.util.Arrays;
 

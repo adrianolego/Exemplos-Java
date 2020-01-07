@@ -2,10 +2,11 @@ package com.adriano.modelagem.service;
 
 import com.adriano.modelagem.domain.Categoria;
 import com.adriano.modelagem.repository.CategoriaRepository;
-import java.util.Optional;
 import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class CategoriaService {

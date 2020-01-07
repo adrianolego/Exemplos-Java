@@ -15,3 +15,4 @@
 #### Endereços
     Aplicação: localhost:8081
     Banco de dados : localhost:8081/h2.console (user:sa, pwd: )
+    Swagger: http://localhost:8081/swagger-ui.html
