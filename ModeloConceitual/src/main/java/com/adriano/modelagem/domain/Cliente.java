@@ -2,22 +2,28 @@ package com.adriano.modelagem.domain;
 
 import com.adriano.modelagem.domain.enums.TipoCliente;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.*;
 
+@Entity
 public class Cliente implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
     private String email;
     private String cpfCnpj;
     private Integer tipoCliente;
 
+    @OneToMany(mappedBy = "cliente")
     private List<Endereco> enderecos = new ArrayList<>();
+    @ElementCollection
+    @CollectionTable(name = "TELEFONE")
     private Set<String> telefones = new HashSet<>();
 
     public Cliente() {
-
     }
 
     public Cliente(Integer id, String nome, String email, String cpfCnpj, TipoCliente tipoCliente) {

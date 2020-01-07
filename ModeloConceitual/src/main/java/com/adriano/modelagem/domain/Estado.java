@@ -2,28 +2,28 @@ package com.adriano.modelagem.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
-public class Cidade implements Serializable {
+public class Estado implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
 
-    @ManyToOne
-    @JoinColumn(name = "estado_id")
-    private Estado estado;
+    @OneToMany(mappedBy = "estado")
+    private List<Cidade> cidades = new ArrayList<>();
 
+    public Estado() {
 
-    public Cidade() {
     }
 
-    public Cidade(Integer id, String nome, Estado estado) {
+    public Estado(Integer id, String nome) {
         this.id = id;
         this.nome = nome;
-        this.estado = estado;
     }
 
     public Integer getId() {
@@ -42,20 +42,20 @@ public class Cidade implements Serializable {
         this.nome = nome;
     }
 
-    public Estado getEstado() {
-        return estado;
+    public List<Cidade> getCidades() {
+        return cidades;
     }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
+    public void setCidades(List<Cidade> cidades) {
+        this.cidades = cidades;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Cidade cidade = (Cidade) o;
-        return Objects.equals(id, cidade.id);
+        Estado estado = (Estado) o;
+        return id == estado.id;
     }
 
     @Override
