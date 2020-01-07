@@ -1,0 +1,7 @@
+server:
+  port: 9090
+
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://adrianoLego:mongo321@cluster0-9mdmy.mongodb.net/test?retryWrites=true&w=majority"

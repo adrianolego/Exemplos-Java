@@ -3,6 +3,12 @@ package com.adriano.modelagem.domain;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Cidade implements Serializable {
@@ -15,7 +21,6 @@ public class Cidade implements Serializable {
     @ManyToOne
     @JoinColumn(name = "estado_id")
     private Estado estado;
-
 
     public Cidade() {
     }
@@ -38,10 +43,6 @@ public class Cidade implements Serializable {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Estado getEstado() {
         return estado;
     }
@@ -56,10 +57,5 @@ public class Cidade implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         Cidade cidade = (Cidade) o;
         return Objects.equals(id, cidade.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
     }
 }

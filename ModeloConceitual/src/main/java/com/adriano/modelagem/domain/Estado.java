@@ -1,6 +1,11 @@
 package com.adriano.modelagem.domain;
 
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,16 +51,21 @@ public class Estado implements Serializable {
         return cidades;
     }
 
-    public void setCidades(List<Cidade> cidades) {
+    public Estado setCidades(List<Cidade> cidades) {
         this.cidades = cidades;
+        return this;
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Estado estado = (Estado) o;
-        return id == estado.id;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Estado cidade = (Estado) o;
+        return id.equals(cidade.id);
     }
 
     @Override

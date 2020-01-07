@@ -19,6 +19,7 @@ public class Endereco implements Serializable {
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
+
     @ManyToOne
     @JoinColumn(name = "cidade_id")
     private Cidade cidade;
@@ -27,13 +28,14 @@ public class Endereco implements Serializable {
     }
 
     public Endereco(Integer id, String logradouro, String numero, String complemento,
-                    String bairro, String cep, Cidade cidade) {
+                    String bairro, String cep, Cliente cliente, Cidade cidade) {
         this.id = id;
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
         this.bairro = bairro;
         this.cep = cep;
+        this.cliente = cliente;
         this.cidade = cidade;
     }
 
@@ -95,8 +97,12 @@ public class Endereco implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Endereco endereco = (Endereco) o;
         return id.equals(endereco.id);
     }
