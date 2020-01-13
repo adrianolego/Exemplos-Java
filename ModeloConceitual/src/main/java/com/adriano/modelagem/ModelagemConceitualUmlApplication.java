@@ -1,14 +1,13 @@
 package com.adriano.modelagem;
 
-import com.adriano.modelagem.domain.Categoria;
-import com.adriano.modelagem.domain.Cidade;
-import com.adriano.modelagem.domain.Cliente;
-import com.adriano.modelagem.domain.Endereco;
-import com.adriano.modelagem.domain.Estado;
-import com.adriano.modelagem.domain.Produto;
+import com.adriano.modelagem.domain.*;
+import com.adriano.modelagem.domain.enums.EstadoPagamento;
 import com.adriano.modelagem.domain.enums.TipoCliente;
 import com.adriano.modelagem.repository.*;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +35,12 @@ public class ModelagemConceitualUmlApplication implements CommandLineRunner {
 
     @Autowired
     private EnderecoRepository enderecoRepository;
+
+    @Autowired
+    private PagamentoRepository pagamentoRepository;
+
+    @Autowired
+    private PedidoRepository pedidoRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(ModelagemConceitualUmlApplication.class, args);
@@ -89,5 +94,23 @@ public class ModelagemConceitualUmlApplication implements CommandLineRunner {
 
         clienteRepository.saveAll(Arrays.asList(cli1));
         enderecoRepository.saveAll(Arrays.asList(end1, end2));
+
+        LocalDateTime ldt = LocalDateTime.of(2017, 9, 30, 10, 32);
+        Pedido ped1 = new Pedido(null, ldt, cli1, end1);
+
+        ldt = LocalDateTime.of(2017, 10, 10, 19, 35);
+        Pedido ped2 = new Pedido(null, ldt, cli1, end2);
+
+        Pagamento pagto1 = new PagamentoComCartao(null, EstadoPagamento.QUITADO, ped1, 6);
+        ped1.setPagamento(pagto1);
+
+        LocalDate ld = LocalDate.of(2017, 10, 20);
+        Pagamento pagto2 = new PagamentoComBoleto(null, EstadoPagamento.PENDENTE, ped2, ld, null);
+        ped2.setPagamento(pagto2);
+
+        cli1.getPedidos().addAll(Arrays.asList(ped1, ped2));
+
+        pedidoRepository.saveAll(Arrays.asList(ped1, ped2));
+        pagamentoRepository.saveAll(Arrays.asList(pagto1, pagto2));
     }
 }

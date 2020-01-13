@@ -3,26 +3,22 @@ package com.adriano.modelagem.domain;
 import com.adriano.modelagem.domain.enums.EstadoPagamento;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Entity
 public class PagamentoComBoleto extends Pagamento implements Serializable {
 
     private LocalDate dataVencimento;
-    private LocalDate datapagamento;
+    private LocalDate dataPagamento;
 
     public PagamentoComBoleto() {
     }
 
-    public PagamentoComBoleto(Integer id, EstadoPagamento estadoPagamento, Pedido pedido, Integer id1, LocalDate dataVencimento, LocalDate datapagamento) {
+    public PagamentoComBoleto(Integer id, EstadoPagamento estadoPagamento, Pedido pedido, LocalDate dataVencimento, LocalDate dataPagamento) {
         super(id, estadoPagamento, pedido);
         this.dataVencimento = dataVencimento;
-        this.datapagamento = datapagamento;
+        this.dataPagamento = dataPagamento;
     }
 
     public LocalDate getDataVencimento() {
@@ -33,11 +29,11 @@ public class PagamentoComBoleto extends Pagamento implements Serializable {
         this.dataVencimento = dataVencimento;
     }
 
-    public LocalDate getDatapagamento() {
-        return datapagamento;
+    public LocalDate getDataPagamento() {
+        return dataPagamento;
     }
 
-    public void setDatapagamento(LocalDate datapagamento) {
-        this.datapagamento = datapagamento;
+    public void setDataPagamento(LocalDate dataPagamento) {
+        this.dataPagamento = dataPagamento;
     }
 }

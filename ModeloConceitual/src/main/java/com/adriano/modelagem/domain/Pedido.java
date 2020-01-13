@@ -1,11 +1,8 @@
 package com.adriano.modelagem.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
@@ -14,18 +11,24 @@ public class Pedido implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private LocalDate data;
+    private LocalDateTime data;
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "pedido")
     private Pagamento pagamento;
+
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
+
+    @ManyToOne
+    @JoinColumn(name = "endereco_entrega_id")
     private Endereco enderecoEntrega;
 
-    public Pedido(){
+    public Pedido() {
     }
 
-    public Pedido(Integer id, LocalDate data, Pagamento pagamento, Cliente cliente, Endereco enderecoEntrega) {
+    public Pedido(Integer id, LocalDateTime data, Cliente cliente, Endereco enderecoEntrega) {
         this.id = id;
         this.data = data;
-        this.pagamento = pagamento;
         this.cliente = cliente;
         this.enderecoEntrega = enderecoEntrega;
     }
@@ -38,11 +41,11 @@ public class Pedido implements Serializable {
         this.id = id;
     }
 
-    public LocalDate getData() {
+    public LocalDateTime getData() {
         return data;
     }
 
-    public void setData(LocalDate data) {
+    public void setData(LocalDateTime data) {
         this.data = data;
     }
 
