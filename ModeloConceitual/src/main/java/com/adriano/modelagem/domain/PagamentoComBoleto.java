@@ -1,6 +1,7 @@
 package com.adriano.modelagem.domain;
 
 import com.adriano.modelagem.domain.enums.EstadoPagamento;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.Entity;
 import java.io.Serializable;
@@ -9,7 +10,9 @@ import java.time.LocalDate;
 @Entity
 public class PagamentoComBoleto extends Pagamento implements Serializable {
 
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataVencimento;
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataPagamento;
 
     public PagamentoComBoleto() {

@@ -2,54 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca516cb4-0881-4441-8e61-a0a42efed6d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/config/Swagger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/ItemPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/ItemPedidoPk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComCartao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/enums/EstadoPagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/ItemPedidoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/PagamentoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/repository/PedidoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/ClienteResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/PedidoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/PedidoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelagem-conceitual-UML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Modelagem-conceitual-UML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/ModelagemConceitualUmlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/ModelagemConceitualUmlApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/CategoriaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/CategoriaResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/CategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/ModelagemConceitualUmlApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/ModelagemConceitualUmlApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cidade.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Endereco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Estado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/ItemPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/ItemPedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pagamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/resource/CategoriaResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/resource/CategoriaResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/service/CategoriaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/service/CategoriaService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +149,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.adriano.modelagem.resource" />
+      <recent name="com.adriano.modelagem.service" />
       <recent name="com.adriano.modelagem.repository" />
       <recent name="com.adriano.modelagem.domain" />
     </key>
@@ -248,21 +216,21 @@
       <screen x="0" y="0" width="1366" height="737" />
     </state>
     <state x="150" y="0" width="1062" height="737" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.737@0.0.1366.737" timestamp="1578958489535" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1579645963684">
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1579647320887">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1579645963684" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1579645963683">
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
+    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1579647320887">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1579645963683" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1579645963682">
+    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
+    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1579647320887">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1579645963682" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1579645963684">
+    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1579647320887">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1579645963684" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
   </component>
 </project>
