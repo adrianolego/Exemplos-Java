@@ -5,15 +5,23 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/PedidoResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/PedidoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Estado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/ItemPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pagamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/CategoriaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/CategoriaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/ClienteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/ClienteResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/CategoriaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/ItemPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/ItemPedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pagamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/PagamentoComBoleto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/PagamentoComBoleto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Produto.class" afterDir="false" />
     </list>
@@ -216,21 +224,25 @@
       <screen x="0" y="0" width="1366" height="737" />
     </state>
     <state x="150" y="0" width="1062" height="737" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.737@0.0.1366.737" timestamp="1578958489535" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1579647320887">
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1579651791010">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1579647320887">
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1579651791010" />
+    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1579651791010">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1579647320887">
+    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1579651791010" />
+    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1579651791009">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1579647320887">
+    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1579651791009" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1579651791010">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1579647320887" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1579651791010" />
+    <state x="337" y="105" width="692" height="530" key="find.popup" timestamp="1580163846909">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="337" y="105" width="692" height="530" key="find.popup/0.0.1366.737@0.0.1366.737" timestamp="1580163846909" />
   </component>
 </project>

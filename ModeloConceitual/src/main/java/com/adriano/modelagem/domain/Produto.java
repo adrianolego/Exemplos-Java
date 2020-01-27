@@ -1,11 +1,10 @@
 package com.adriano.modelagem.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.*;
-import javax.persistence.*;
 
 @Entity
 public class Produto implements Serializable {
@@ -16,7 +15,6 @@ public class Produto implements Serializable {
     private String nome;
     private double preco;
 
-    @JsonBackReference
     @ManyToMany
     @JoinTable(name = "PRODUTO_CATEGORIA",
             joinColumns = @JoinColumn(name = "PRODUTO_ID"),

@@ -6,23 +6,43 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.net.URI;
+
 @Api(value = "API REST Categorias")
 @RestController
 @RequestMapping("/categorias")
 public class CategoriaResource {
 
-  @Autowired
-  private CategoriaService categoriaService;
+    @Autowired
+    private CategoriaService categoriaService;
 
-  @ApiOperation(value = "Operações de categorias")
-  @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-  public ResponseEntity<?> listar(@PathVariable Integer id) {
-    Categoria cat = categoriaService.find(id);
-    return ResponseEntity.ok().body(cat);
-  }
+    @ApiOperation(value = "Consultar categorias")
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResponseEntity<Categoria> listar(@PathVariable Integer id) {
+        Categoria cat = categoriaService.find(id);
+        return ResponseEntity.ok().body(cat);
+    }
+
+    @ApiOperation(value = "Inserir categorias")
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<Void> inserir(@RequestBody Categoria categoria) {
+        categoria = categoriaService.insert(categoria);
+        URI uri = ServletUriComponentsBuilder
+                .fromCurrentRequestUri()
+                .path("/{id}")
+                .buildAndExpand(categoria.getId())
+                .toUri();
+        return ResponseEntity.created(uri).build();
+    }
+
+    @ApiOperation(value = "Atualizar categorias")
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    public ResponseEntity<Void> atualizar(@RequestBody Categoria categoria, @PathVariable Integer id) {
+        categoria = categoriaService.update(categoria);
+        return ResponseEntity.noContent().build();
+    }
 
 }

@@ -19,9 +19,9 @@ public class PedidoResource {
     @Autowired
     private PedidoService pedidoService;
 
-    @ApiOperation(value = "Operações de categorias")
+    @ApiOperation(value = "Consultar pedidos")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> listar(@PathVariable Integer id) {
+    public ResponseEntity<Pedido> listar(@PathVariable Integer id) {
         Pedido ped = pedidoService.find(id);
         return ResponseEntity.ok().body(ped);
     }
