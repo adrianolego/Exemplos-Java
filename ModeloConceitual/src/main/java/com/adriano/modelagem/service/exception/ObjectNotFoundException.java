@@ -1,4 +1,4 @@
-package com.adriano.modelagem.exception;
+package com.adriano.modelagem.service.exception;
 
 public class ObjectNotFoundException extends RuntimeException {
 

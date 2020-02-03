@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca516cb4-0881-4441-8e61-a0a42efed6d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/dto/CategoriaDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/PedidoResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/PedidoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/exception/DataIntegrityViolationException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Categoria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Cidade.java" afterDir="false" />
@@ -15,15 +17,27 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/PagamentoComBoleto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/domain/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/exception/ObjectNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/exception/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/exception/ObjectNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/CategoriaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/CategoriaResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/ClienteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/ClienteResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/exception/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/resource/exception/ResourceExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriano/modelagem/service/CategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Categoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Categoria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cidade.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Estado.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/ItemPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/ItemPedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pagamento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/PagamentoComBoleto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/PagamentoComBoleto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Pedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/domain/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/exception/ObjectNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/resource/CategoriaResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/resource/ClienteResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/resource/ClienteResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/resource/exception/ResourceExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adriano/modelagem/service/CategoriaService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,10 +171,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.adriano.modelagem.service.exception" />
+      <recent name="com.adriano.modelagem.resource.exception" />
       <recent name="com.adriano.modelagem.resource" />
       <recent name="com.adriano.modelagem.service" />
       <recent name="com.adriano.modelagem.repository" />
-      <recent name="com.adriano.modelagem.domain" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,37 +227,49 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="57" width="380" height="628" key="#com.intellij.ide.util.MemberChooser" timestamp="1579213730255">
+    <state x="491" y="57" width="380" height="628" key="#com.intellij.ide.util.MemberChooser" timestamp="1580770918997">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state x="491" y="57" width="380" height="628" key="#com.intellij.ide.util.MemberChooser/0.0.1366.737@0.0.1366.737" timestamp="1579213730255" />
+    <state x="491" y="57" width="380" height="628" key="#com.intellij.ide.util.MemberChooser/0.0.1366.737@0.0.1366.737" timestamp="1580770918997" />
     <state x="366" y="99" width="630" height="543" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578954342312">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
     <state x="366" y="99" width="630" height="543" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.737@0.0.1366.737" timestamp="1578954342312" />
+    <state x="152" y="298" width="1061" height="146" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580768755556">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="152" y="298" width="1061" height="146" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.737@0.0.1366.737" timestamp="1580768755556" />
     <state x="150" y="0" width="1062" height="737" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578958489535">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
     <state x="150" y="0" width="1062" height="737" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.737@0.0.1366.737" timestamp="1578958489535" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1579651791010">
+    <state x="416" y="119" width="530" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580768743531">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1579651791010" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1579651791010">
+    <state x="416" y="119" width="530" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.737@0.0.1366.737" timestamp="1580768743531" />
+    <state width="1324" height="159" key="GridCell.Tab.0.bottom" timestamp="1580771705545">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1579651791010" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1579651791009">
+    <state width="1324" height="159" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1580771705545" />
+    <state width="1324" height="159" key="GridCell.Tab.0.center" timestamp="1580771705544">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1579651791009" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1579651791010">
+    <state width="1324" height="159" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1580771705544" />
+    <state width="1324" height="159" key="GridCell.Tab.0.left" timestamp="1580771705544">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1579651791010" />
+    <state width="1324" height="159" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1580771705544" />
+    <state width="1324" height="159" key="GridCell.Tab.0.right" timestamp="1580771705544">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1324" height="159" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1580771705544" />
     <state x="337" y="105" width="692" height="530" key="find.popup" timestamp="1580163846909">
       <screen x="0" y="0" width="1366" height="737" />
     </state>
     <state x="337" y="105" width="692" height="530" key="find.popup/0.0.1366.737@0.0.1366.737" timestamp="1580163846909" />
+    <state x="346" y="58" key="search.everywhere.popup" timestamp="1580768086276">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="346" y="58" key="search.everywhere.popup/0.0.1366.737@0.0.1366.737" timestamp="1580768086276" />
   </component>
 </project>
